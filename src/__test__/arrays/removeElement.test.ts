@@ -1,5 +1,5 @@
+import { removeElement } from 'src/arrays/removeElement';
 import { test, expect } from 'vitest';
-import { removeElement } from './removeElement';
 
 test('removeElement', () => {
   const nums = [0, 1, 2, 2, 3, 0, 4, 2];

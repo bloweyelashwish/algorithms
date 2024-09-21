@@ -1,5 +1,5 @@
+import { MinStack } from 'src/arrays/minStack';
 import { test, expect } from 'vitest';
-import { MinStack } from './minStack';
 
 test('MinStack', () => {
   const minStack = new MinStack();

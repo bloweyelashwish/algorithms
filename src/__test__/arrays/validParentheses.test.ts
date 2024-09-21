@@ -1,6 +1,5 @@
+import { isValid } from 'src/arrays/validParentheses';
 import { describe, test, expect } from 'vitest';
-
-import { isValid } from './validParentheses';
 
 describe('validParentheses', () => {
   test('Returns true for valid single set of parentheses', () => {

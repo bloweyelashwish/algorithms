@@ -1,5 +1,5 @@
+import { removeDuplicates } from 'src/arrays/removeDuplicates';
 import { test, expect } from 'vitest';
-import { removeDuplicates } from './removeDuplicates';
 
 test('removeDuplicates', () => {
   const nums = [1, 1, 2, 3, 3, 3, 4, 5, 5, 5, 5];

@@ -1,5 +1,5 @@
+import { shuffle } from 'src/arrays/shuffleTheArray';
 import { test, expect } from 'vitest';
-import { shuffle } from './shuffleTheArray';
 
 test('shuffleTheArray', () => {
   const nums = [2, 5, 1, 3, 4, 7];

@@ -1,5 +1,5 @@
+import { calPoints } from 'src/arrays/baseballGame';
 import { describe, test, expect } from 'vitest';
-import { calPoints } from './baseballGame';
 
 describe('baseballGame', () => {
   test('Record with multiple operations', () => {
