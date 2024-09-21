@@ -8,16 +8,16 @@
   Every close bracket has a corresponding open bracket of the same type.
 */
 
+const dict: Record<string, string> = {
+  ')': '(',
+  '}': '{',
+  ']': '[',
+};
+
 export function isValid(s: string): boolean {
   if (s.length % 2 !== 0) {
     return false;
   }
-
-  const dict: Record<string, string> = {
-    ')': '(',
-    '}': '{',
-    ']': '[',
-  };
 
   const stack: string[] = [];
 
