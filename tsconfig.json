@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "types": ["vitest/globals"],
+    "target": "ES2023",
+    "module": "commonjs",
+    "rootDir": "./",
+    "baseUrl": "./",
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true
+  }
+}
