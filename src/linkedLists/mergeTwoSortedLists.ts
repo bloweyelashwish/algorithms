@@ -12,34 +12,19 @@ export function mergeTwoLists(
   list1Head: ListNode | null,
   list2Head: ListNode | null
 ): ListNode | null {
-  let fillNode = new ListNode();
-  let current = fillNode;
-
   if (list1Head === null) {
-    current.next = list2Head;
+    return list2Head;
   }
 
   if (list2Head === null) {
-    current.next = list1Head;
+    return list1Head;
   }
 
-  while (list1Head !== null && list2Head !== null) {
-    if (list1Head.val < list2Head.val) {
-      current.next = list1Head;
-      list1Head = list1Head.next;
-    } else {
-      current.next = list2Head;
-      list2Head = list2Head.next;
-    }
-
-    current = current.next;
+  if (list1Head.val < list2Head.val) {
+    list1Head.next = mergeTwoLists(list1Head.next, list2Head);
+    return list1Head;
   }
 
-  if (list1Head !== null) {
-    current.next = list1Head;
-  } else {
-    current.next = list2Head;
-  }
-
-  return fillNode.next;
+  list2Head.next = mergeTwoLists(list1Head, list2Head.next);
+  return list2Head;
 }

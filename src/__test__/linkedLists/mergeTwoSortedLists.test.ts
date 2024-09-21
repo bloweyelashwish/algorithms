@@ -24,12 +24,13 @@ describe('Merge 2 sorted linked lists', () => {
     expect(result).toEqual(createLinkedList(arr));
   });
 
-  test.only('Merges 2 filled linked lists', () => {
+  test('Merges 2 filled linked lists', () => {
     const arr1 = [1, 2, 4];
     const arr2 = [1, 3, 4];
     const list1 = createLinkedList(arr1);
     const list2 = createLinkedList(arr2);
-    const expectedArr = [1, 1, 2, 3, 4, 4];
+
+    const expectedArr = [...arr1, ...arr2].sort((a, b) => a - b);
     const expectedList = createLinkedList(expectedArr);
 
     const result = mergeTwoLists(list1, list2);
