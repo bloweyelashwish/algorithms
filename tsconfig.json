@@ -3,7 +3,7 @@
     "types": ["vitest/globals"],
     "target": "ES2023",
     "module": "commonjs",
-    "rootDir": "./",
+    "rootDir": "./src",
     "baseUrl": "./",
     "forceConsistentCasingInFileNames": true,
     "strict": true,
