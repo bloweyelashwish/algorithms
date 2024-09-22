@@ -59,16 +59,4 @@ describe('MyLinkedList', () => {
     myLinkedList.deleteAtIndex(3);
     expect(myLinkedList.get(1)).toBe(2);
   });
-
-  /*
-["MyLinkedList","addAtTail","addAtTail","get"]
-[[],[1],[3],[1]]
-*/
-
-  test.only('Test', () => {
-    myLinkedList.addAtTail(1);
-    myLinkedList.addAtTail(3);
-    console.log('get 1', myLinkedList.get(1));
-    // expect(myLinkedList.get(1)).toBe(3);
-  });
 });
